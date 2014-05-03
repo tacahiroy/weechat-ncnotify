@@ -37,7 +37,7 @@ def unhook_notifications(data, signal, message)
 end
 
 def notify(title, subtitle, message)
-  TerminalNotifier.notify(message, :title => title, :subtitle => subtitle, :group => Process.pid)
+  TerminalNotifier.notify(message, :title => title, :subtitle => subtitle)
 end
 
 def show_private(data, signal, message)
@@ -51,5 +51,5 @@ def show_highlight(data, signal, message)
 end
 
 def show_notification(title, subtitle, message)
-  TerminalNotifier.notify(message, :title => title, :subtitle => subtitle, :group => Process.pid)
+  TerminalNotifier.notify(message, :title => title, :subtitle => subtitle)
 end
